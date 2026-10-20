@@ -1,8 +1,11 @@
 #include "logic.h"
 
-#define NUMBER_OF_STUDENTS 3.0
+double calulate_average(int marks[SIZE]) {
+	double sum = 0;
 
-double calulate_average(int mark1, int mark2, int mark3) {
+	for (int i = 0; i < SIZE; i++) {
+		sum += marks[i];
+	}
 
-	return (mark1 + mark2 + mark3) / NUMBER_OF_STUDENTS;
+	return sum / SIZE;
 }

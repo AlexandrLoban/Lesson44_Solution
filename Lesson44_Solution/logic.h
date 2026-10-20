@@ -1,4 +1,6 @@
 #include <iostream>
 using namespace std;
+#define SIZE 5
 
-double calulate_average(int mark1, int mark2, int mark3);
+
+double calulate_average(int marks[SIZE]);

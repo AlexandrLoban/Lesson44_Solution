@@ -1,12 +1,18 @@
 #include "logic.h"
 
 int main() {
-	int mark1, mark2, mark3;
+	
+	int marks[SIZE];
 
-	cout << "Input student's marks: ";
-	cin >> mark1 >> mark2 >> mark3;
+	cout << "Input students marks: ";
+	for (int i = 0; i < SIZE; i++) {
 
-	cout << "average mark: " << calulate_average(mark1, mark2, mark3) << endl;
+		cin >> marks[i];
+	}
+
+	double avg = calulate_average(marks);
+
+	cout << "Result: " << avg << endl;
 
 	return 0;
 }
